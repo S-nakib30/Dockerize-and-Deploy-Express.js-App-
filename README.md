@@ -45,5 +45,43 @@ npm start
 
 2. **Default Port**: By Default this application will run on port 3000
 
+### about the project :
+# Module 5 Project
+
+This project Dockerizes a Node.js (Express) application and serves it using Nginx and Docker Compose. The app is accessible at `http://localhost:8080`.
+# obective:
+ task is to containerize this Express.js app and run it alongside Nginx using Docker Compose. You will:
+
+Dockerize the Node.js (Express) app.
+
+Create a docker-compose.yml file that:
+
+Just Runs a Nginx image.
+
+Builds and runs the Express.js app from the Dockerfile.
+
+Starts the Express app after Nginx.
+
+Expose the application on port 8080.
+
+Use Docker Compose to run everything.
+
+Verify it's working in the browser.
+## Structure
+
+- `Dockerfile`: Builds the Node.js app.
+- `docker-compose.yml`: Runs Express app and Nginx together.
+- `nginx/default.conf`: Nginx reverse proxy setup.
+- `src/server.js`: Express app.
+- `public/index.html`: Frontend page.
+
+## How to Run
+
+```bash
+docker compose up --build
+config nginx
+create dockerfile
+
+
 
 
